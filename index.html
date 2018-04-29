@@ -1,27 +1,80 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script language="javascript" type="text/javascript" src="./lib/nn.js"></script>
-  <script language="javascript" type="text/javascript" src="./lib/matrix.js"></script>
-  <script language="javascript" type="text/javascript" src="index.js"></script>
-  <style>
-      .container {
-          display: inline-block;
-          border: 1px solid #CCC;
-          margin: 15px;
-          padding: 5px;
-          text-align: center;
-          width: 300px;
-      }
 
-      canvas {
-          width: 200px;
-          height: 200px;
-          border: 1px solid #000;
-      }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <!-- Libraries -->
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./lib/nn.js"></script>
+    <script language="javascript" type="text/javascript" src="./lib/matrix.js"></script>
+    <!-- Local scripts -->
+    <script language="javascript" type="text/javascript" src="./helper.js"></script>
+    <script language="javascript" type="text/javascript" src="./TestCase.js"></script>
+    <script language="javascript" type="text/javascript" src="./TestGroup.js"></script>
+    <script language="javascript" type="text/javascript" src="index.js"></script>
+    <!-- Specific tests -->
+    <script language="javascript" type="text/javascript" src="./Tests/BorderTest.js"></script>
+    <script language="javascript" type="text/javascript" src="./Tests/BorderTests.js"></script>
+    <style>
+        body {
+            background-color: #F1F1F1;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .container {
+            display: inline-block;
+            border: 1px solid #CCC;
+            margin: 5px;
+            padding: 15px;
+            color: #FFF;
+            background-color: #333;
+        }
+
+        .results {
+            margin-left: 15px;
+            float: right;
+            min-width: 250px;
+        }
+
+        .test-cases {
+            display: inline-block;
+        }
+
+        .test-cases .container {
+            text-align: center;
+            width: 300px;
+            color: #333;
+            background-color: #FFF;
+        }
+
+        .border-canvas {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+
+        .progress-bar {
+            display: inline-block;
+        }
+
+        .progress-bar h2 {
+            margin: 5px;
+            white-space: nowrap;
+        }
+
+        .progress-bar .percentage {
+            background-color: #0C6;
+        }
+
+        .done {
+            background-color: #0C6;
+        }
+    </style>
 </head>
+
 <body>
 </body>
+
 </html>
